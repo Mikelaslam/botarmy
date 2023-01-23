@@ -14,11 +14,11 @@ function BotCard({bot, handleBot, handleDelete}) {
  return (
   <div className="ui column">
       <div
-        className="ui card"
+        className=" card col-3 p-2 m-3"
         key={bot.id}
         onClick={() => handleBot(bot)}
       >
-        <div className="image">
+        <div className="card image top">
           <img alt="oh no!" src={bot.avatar_url} />
         </div>
         <div className="content">
