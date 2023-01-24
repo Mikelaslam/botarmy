@@ -1,13 +1,5 @@
 import React from 'react';
 
-const botTypeClasses = {
-  Assault: "icon military",
-  Defender: "icon shield",
-  Support: "icon plus circle",
-  Medic: "icon ambulance",
-  Witch: "icon magic",
-  Captain: "icon star",
-};
 
 function BotCard({bot, handleBot, handleDelete}) {
  return (
@@ -23,26 +15,13 @@ function BotCard({bot, handleBot, handleDelete}) {
         <div className="card-content p-2">
           <div className="card-header">
             {bot.name}
-            <i className={botTypeClasses[bot.bot_class]} />
-          </div>
+           </div>
           <div className="card-meta text-wrap">
             <small>{bot.catchphrase}</small>
           </div>
         </div>
-        <div className="t">
-          <span>
-            <i className="icon heartbeat" />
-            {bot.health}
-          </span>
-
-          <span>
-            <i className="icon lightning" />
-            {bot.damage}
-          </span>
-          <span>
-            <i className="icon shield " />
-            {bot.armor}
-          </span>
+        <div className="card-extra content">
+          
           <div className="text-center">
             <button
               className="btn btn-danger"
