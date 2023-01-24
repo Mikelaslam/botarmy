@@ -34,10 +34,18 @@ function BotsPage () {
   }
 
     return(
-       <div>
-         <MyBotArmy botArmy={botArmy} releaseBot={releaseBotFromArmy} dischargeBot={deleteBot} />
-         <BotCollection bots={bots} addBot={addBotToArmy} dischargeBot={deleteBot} />
+ <div className="d-flex align-items-center h-100">
+    <div className="mx-auto text-center">
+             <h1> Bot Army App </h1> 
+         <div>
+         <MyBotArmy botArmy={botArmy} 
+         releaseBot={releaseBotFromArmy} 
+         dischargeBot={deleteBot} />
+         <BotCollection bots={bots} 
+         addBot={addBotToArmy} 
+         dischargeBot={deleteBot} />
        </div>
-        
-    )
-    }export default BotsPage;
+    </div>
+</div>
+ )
+}export default BotsPage;

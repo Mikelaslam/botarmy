@@ -3,7 +3,7 @@ import BotCard from "./BotCard";
 
 function BotCollection ({bots, addBot, dischargeBot}) {
     return(
-        <div className="navy-blue-bg">
+        <div className="navy-blue-bg p-4">
        <div className="row">
       <div className="col-12 mx-auto border p-2">
         <div className= "row">
