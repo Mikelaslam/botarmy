@@ -3,16 +3,20 @@ import BotCard from "./BotCard";
 
 function BotCollection ({bots, addBot, dischargeBot}) {
     return(
-       <div className="ui four column grid">
-      <div className="row">
-        {<ul>{bots.map((bot) => (
+        <div className="navy-blue-bg">
+       <div className="row">
+      <div className="col-12 mx-auto border p-2">
+        <div className= "row">
+      <h2>Display of all bots</h2>
+        {bots.map((bot) => (
           <BotCard key={bot.id} bot={bot} handleBot={addBot} handleDelete={dischargeBot}></BotCard>
-        ))}</ul>
+        ))}
 
-        }
-        Collection of all bots
-
-      </div>
+        </div>
+     
+     </div>
+    
     </div> 
-    );
+</div>
+);
 }export default BotCollection;
