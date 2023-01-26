@@ -3,9 +3,9 @@ import React from 'react';
 
 function BotCard({bot, handleBot, handleDelete}) {
  return (
-    <div className="col-md-3 col-sm-12">
+    <div className="col-md-3 col-sm-9">
       <div
-        className="card my-5 mx-5 p-4 m-3"
+        className="card my-5 mx-4 p-4 m-5"
         key={bot.id}
         onClick={() => handleBot(bot)}
       >
